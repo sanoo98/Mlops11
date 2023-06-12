@@ -1,0 +1,65 @@
+//
+// general.scss
+//
+
+body {
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 1px;
+  color: #323232;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none !important;
+  outline: none;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+hr {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  border-top: 1px solid #c2c6cd;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+
+html {
+  scroll-padding-top: 70px;
+  scroll-behavior: smooth;
+}
+
+.row > * {
+  position: relative;
+}
+
+
+.btn,
+.btn:focus,
+button,
+.form-control:focus,
+button:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: transparent !important;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

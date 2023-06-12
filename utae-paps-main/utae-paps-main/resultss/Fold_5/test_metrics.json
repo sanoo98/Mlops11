@@ -1,0 +1,6 @@
+{
+    "test_accuracy": NaN,
+    "test_loss": NaN,
+    "test_IoU": NaN,
+    "test_epoch_time": 0.0
+}

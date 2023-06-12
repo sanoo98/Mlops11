@@ -1,0 +1,84 @@
+// 
+//  contact 
+// 
+
+// agency-contact
+
+.agency-contact {
+  .agency-contact-icon {
+    i {
+      font-size: 22px;
+    }
+  }
+  .agency-contact-info {
+    overflow: hidden;
+  }
+  .custom-form {
+    .form-control {
+      height: 46px;
+      z-index: 2;
+      font-size: 14px;
+      border: 1px solid rgba($muted, 0.1) !important;
+      &:focus {
+        border-color: rgba($warning, 1);
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+
+textarea.form-control {
+  height: auto !important;
+}
+
+.error {
+  margin: 8px 0px;
+  display: none;
+  color: rgba($danger, 1);
+}
+
+.error_message {
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: rgba($danger, 1);
+  border: 2px solid rgba($danger, 1);
+}
+
+/*------ contact ------*/
+
+.custom-form {
+  .form-control {
+    height: 46px;
+    z-index: 2;
+    font-size: 14px;
+    border: 1px solid rgba($muted, 0.1) !important;
+    &:focus {
+      border-color: rgba($warning, 1);
+      outline: 0;
+      box-shadow: none;
+    }
+  }
+  .form-group {
+    margin: 10px 0;
+  }
+}
+
+.photographer-contact-icon {
+  width: 44px;
+  height: 44px;
+  background-color: $primary;
+  font-size: 22px;
+  line-height: 43px;
+  text-align: center;
+  color: $white;
+  border-radius: 3px;
+}
+
+/*------ STARTUP CONTACT ------*/
+
+.startup-map {
+  filter: grayscale(100);
+}

@@ -1,0 +1,134 @@
+//
+// helper.scss
+//
+
+/*******color Loop*******/
+@each $color, $value in $theme-colors {
+  .text-#{$color} {
+    color: $value !important;
+  }
+  .bg-#{$color} {
+    background-color: $value !important;
+  }
+}
+
+.section {
+  padding-bottom: 110px;
+  padding-top: 110px;
+  position: relative;
+}
+
+.bg-light {
+  background-color: $gray-300!important;
+}
+
+.text-muted {
+  color: $muted !important;
+}
+
+.home-center {
+  display: table;
+  width: 100%;
+  height: 100%;
+  .home-desc-center {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.bg-overlay {
+  background-color: rgba($dark, 0.7)!important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+/**** FONT-SIZE *****/
+
+.f-11 {
+  font-size: 11px;
+}
+
+.f-12 {
+  font-size: 12px;
+}
+
+.f-13 {
+  font-size: 13px;
+}
+
+.f-14 {
+  font-size: 14px;
+}
+
+.f-15 {
+  font-size: 15px;
+}
+
+.f-16 {
+  font-size: 16px;
+}
+
+.f-17 {
+  font-size: 17px;
+}
+
+.f-18 {
+  font-size: 18px;
+}
+
+.f-19 {
+  font-size: 19px;
+}
+
+.f-20 {
+  font-size: 20px;
+}
+
+.f-21 {
+  font-size: 21px;
+}
+
+.f-22 {
+  font-size: 22px;
+}
+
+.line-height_1_4 {
+  line-height: 1.4;
+}
+
+.line-height_1_6 {
+  line-height: 1.6;
+}
+
+.line-height_1_8 {
+  line-height: 1.8;
+}
+
+.letter-spacing_2 {
+  letter-spacing: 2px;
+}
+
+.letter-spacing_4 {
+  letter-spacing: 4px;
+}
+
+.letter-spacing_6 {
+  letter-spacing: 6px;
+}
+
+
+//  heading
+
+.heading-title-title {
+	font-size: 21px;
+	font-weight: 600;
+}
+
+.heading-title-desc {
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 15px;
+}

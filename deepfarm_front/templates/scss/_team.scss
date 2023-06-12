@@ -1,0 +1,151 @@
+// 
+//  team
+// 
+
+.team {
+    .agency-team-img {
+        img {
+            width: 100px;
+        }
+    }
+}
+
+/*------ CONSTRUCTION-TEAM ------*/
+
+.construction-team-box {
+    position: relative;
+    .construction-team-social {
+        a {
+            color: $white;
+            font-size: 20px;
+            transition: all 0.5s;
+        }
+    }
+}
+
+
+/*------ GYM-TEAM ------*/
+
+.gym-team {
+    .gym-team-box {
+        position: relative;
+    }
+    .gym-team-content {
+        position: absolute;
+        bottom: 0px;
+        background-color: rgba(25, 25, 25, 0.5);
+        left: 0px;
+        right: 0px;
+    }
+    .gym-team-social {
+        a {
+            color: $white;
+            font-size: 18px;
+            transition: all 0.5s;
+            &:hover {
+                color: $primary;
+            }
+        }
+    }
+}
+
+/*------ INTERIOR-TEAM ------*/
+
+.interior-team {
+    .interior-team-img{
+        img {
+            width: 170px;
+        }
+    }
+}
+
+/*------ STARTUP TEAM ------*/
+
+.interior-team {
+    .startup-team-social a {
+        color: #cacaca;
+        font-size: 18px;
+        transition: all 0.5s;
+        &:hover {
+            color: $primary;
+        }
+    }
+}
+
+/*------ INTERIOR-SUBSCRIBE ------*/
+
+.interior-bg-subscribe {
+    background: url(static/images/background/bg-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    .interior-subcribe {
+        form {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            input {
+                padding: 15px 20px;
+                width: 100%;
+                font-size: 15px;
+                color: $primary;
+                border: none;
+                outline: none !important;
+                padding-right: 160px;
+                padding-left: 15px;
+                background-color: $white;
+                border-radius: 5px;
+            }
+            button {
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                outline: none !important;
+                border-radius: 0px 3px 3px 0px;
+                font-size: 15px;
+                padding: 14px 30px;
+            }
+        }
+    }
+}
+
+/*------ SOFTWERE-TEAM ------*/
+
+.softwere-team  {
+    .softwere-team-img {
+        img {
+            border-radius: 6px 6px 0px 0px;
+        }
+    }
+    .softwere-team-social {
+        a {
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            border: 1px solid $gray-200;
+            color: $gray-dark-500;
+            display: inline-block;
+            text-align: center;
+            font-size: 16px;
+            transition: all 0.5s;
+            &:hover {
+                border: 1px solid $primary;
+                color: $white;
+                background-color: $primary;
+                transition: all 0.5s;
+            }
+        }
+    }
+}
+
+/*------ STARTUP TEAM ------*/
+
+.startup-team-social a {
+    color: $gray-400;
+    font-size: 18px;
+    transition: all 0.5s;
+}
+
+.startup-team-social a:hover {
+    color: $primary;
+}

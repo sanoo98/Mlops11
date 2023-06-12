@@ -1,0 +1,91 @@
+//
+// components.scss
+//
+
+/**** BUTTON-CODE *****/
+
+.btn {
+  padding: 14px 28px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.btn-sm {
+  padding: 10px 22px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.btn-md {
+  padding: 12px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.btn-round {
+  border-radius: 3px !important;
+}
+
+.btn-rounded {
+  border-radius: 30px !important;
+}
+
+.btn-custom {
+  color: #ffffff;
+  background-color: rgba($warning, 1);
+  border: 1px solid rgba($warning, 1);
+}
+
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active,
+.btn-custom.focus,
+.btn-custom:active,
+.open > .dropdown-toggle .btn-custom {
+  color: #ffffff;
+  background-color: rgba(233, 170, 57, 0.85);
+  border: 1px solid rgba(233, 170, 57, 0.85);
+}
+
+.btn-white {
+  color: #323232;
+  background-color: #ffffff;
+}
+
+.btn-white:hover,
+.btn-white:focus,
+.btn-white:active,
+.btn-white.active,
+.btn-white.focus,
+.btn-white:active,
+.open > .dropdown-toggle .btn-white {
+  color: #323232;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
+.btn-dark-custom {
+  color: #ffffff;
+  background-color: #323232 !important;
+}
+
+.btn-dark-custom:hover,
+.btn-dark-custom:focus,
+.btn-dark-custom:active,
+.btn-dark-custom.active,
+.btn-dark-custom.focus,
+.btn-dark-custom:active,
+.open > .dropdown-toggle .btn-dark {
+  color: #ffffff;
+  background-color: rgba(50, 50, 50, 0.85) !important;
+}

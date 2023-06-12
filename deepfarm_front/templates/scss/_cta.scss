@@ -1,0 +1,203 @@
+// 
+//  cta
+// 
+
+.cta {
+    background: url(static/images/background/bg-3.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 120px 0px 120px 0px;
+    .counter-icon {
+        i {
+            font-size: 40px;
+            color: $gray-100;
+        }
+    }
+    .counter-count {
+        font-size: 44px;
+        .counter_value {
+          font-family: "Raleway", sans-serif;
+        }
+    }
+}
+
+
+.cta-2 {
+    background: url(static/images/background/bg-2.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 120px 0px 120px 0px;
+    .app-video-title {
+        font-size: 33px;
+        letter-spacing: 4px;
+    }
+    .app-video-desc {
+        max-width: 700px;
+    }
+    .app-video-icon i {
+        font-size: 40px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid $white;
+    }
+    .home-modal {
+        border: 0;
+        background-color: transparent;
+        .btn-close {
+          width: 24px;
+          height: 24px;
+          background-color: rgba($dark, 0.5);
+          border-radius: 4px;
+          position: relative;
+          top: 60px;
+          right: 3px;
+          z-index: 3;
+          &:hover,
+          &:focus {
+            opacity: 0.5;
+          }
+        }
+        video {
+          &:focus {
+            outline: none;
+          }
+        }
+      }
+} 
+
+/*------ APP-DOWNLODE------*/
+
+.bg-app-downlode {
+  background: url(static/images/background/bg-3.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 120px 0px 120px 0px;
+  .app-downlode-title {
+    font-size: 30px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+  }
+}
+
+/*------ BOOK CTA ------*/
+
+.book-bg-cta {
+  background: url(static/images/background/bg-15.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 120px 0px 120px 0px;
+  .book-cta-title {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+}
+
+
+/*------ BUSINESS COUNTER ------*/
+
+.business-bg-counter {
+  background: url(static/images/blog/blog-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .business-counter-content {
+    .business-counter-icon {
+      i {
+        font-size: 40px;
+      }
+    }
+    h1 {
+      font-size: 26px;
+    }
+    .business-counter-desc {
+      color: rgba($white, 0.7);
+    }
+  }
+  .business-counter-box {
+    background-color: rgba($white, 0.13);
+    padding: 40px 20px 40px 20px;
+  }
+}
+
+
+/*------ BUSINESS CTA ------*/
+
+.business-bg-cta {
+  background: url(static/images/background/bg-2.jpg);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  padding: 120px 0px 120px 0px;
+}
+
+.business-cta-title {
+  font-size: 24px;
+}
+
+/*------ CONSTRUCTION-CTA ------*/
+
+.bg-construction-cta {
+  background: url(static/images/background/bg-1.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  .construction-cta-content {
+    .construction-cta-title {
+      font-size: 26px;
+    }
+      p {
+        max-width: 700px;
+        margin: 0 auto;
+      }
+  }
+}
+
+/*------ GYM-COUNTER ------*/
+
+.gym-bg-counter {
+  background: url(static/images/background/bg-7.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 120px 0px 120px 0px !important;
+  .gym-counter-box {
+    background-color: rgba(255, 255, 255, 0.3);
+    .gym-counter-icon {
+      i {
+        color: $white;
+        font-size: 36px;
+      }
+    }
+    .gym-counter-value {
+      font-size: 35px;
+    }
+  }
+}
+
+/*------ PHOTOGRAPHER CTA ------*/
+
+.bg-photographer-cta {
+  background: url(static/images/background/bg-13.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 120px 0px 120px 0px !important;
+}
+
+/*------ STARTUP CTA ------*/
+
+.bg-stratup-cta {
+  background: url(static/images/background/bg-15.jpg);
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  padding: 120px 0px 120px 0px;
+}

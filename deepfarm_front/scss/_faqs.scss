@@ -1,0 +1,58 @@
+
+
+// book-faqs
+
+.book-faqs {
+    .tab-content {
+        padding-top: 1rem;
+        .accordion {
+            .accordion-item {
+                border-radius: 8px;
+                margin: 19px 0 0 0;
+                border: 1px solid $gray-200;
+                .accordion-button {
+                    margin: 0px 8px 0px 0;
+                    border-radius: 8px;
+                    &:hover {
+                        color: $primary;
+                    }
+                    &::after {
+                        background-image: none;
+                        transition: all 0.5s ease;
+                    }
+                    h6 {
+                        margin-bottom: 0;
+                        position: relative;
+                        font-size: 12.4px;
+                        text-transform: uppercase;
+                        letter-spacing: 2px;
+                        span {
+                            left: 0;
+                            padding-right: 15px;
+                            padding-left: 8px;
+                        }
+                    }
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+                .accordion-body {
+                    padding: 0;
+                    border-top: 1px solid $gray-200;
+                }
+            }
+            .accordion-button:not(.collapsed) {
+                color: $primary;
+                background-color: transparent;
+                box-shadow: none;
+                h6 {
+                    font-weight: 600;
+                    span {
+                        opacity: 1;
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+}

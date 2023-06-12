@@ -1,0 +1,11 @@
+{
+    "micro_IoU": NaN,
+    "micro_Precision": NaN,
+    "micro_Recall": NaN,
+    "micro_F1-score": NaN,
+    "MACRO_IoU": NaN,
+    "MACRO_Precision": NaN,
+    "MACRO_Recall": NaN,
+    "MACRO_F1-score": NaN,
+    "Accuracy": NaN
+}

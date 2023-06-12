@@ -1,0 +1,116 @@
+//
+// menu.scss
+//
+
+.navbar-custom {
+  padding: 20px 0px;
+  width: 100%;
+  border-radius: 0px;
+  z-index: 999;
+  margin-bottom: 0px;
+  transition: all 0.5s ease-in-out;
+  .navbar-brand {
+    .logo-light {
+      display: inline-block;
+    }
+    .logo-dark {
+      display: none;
+    }
+  }
+  .navbar-toggler {
+    font-size: 24px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    color: rgba($primary, 1);
+  }
+  .navbar-collapse {
+    .navbar-nav {
+      .nav-item {
+        .nav-link {
+          line-height: 26px;
+          font-size: 12px;
+          margin: 0 15px;
+          letter-spacing: 0.8px;
+          text-transform: uppercase;
+          font-weight: 600;
+          color: rgba($white, 1);
+          &.active {
+            color: $white;
+            &::before{
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/*---NAVBAR STICKY--*/
+
+.nav-sticky {
+  &.navbar-custom {
+    margin-top: 0px;
+    padding: 15px 0px;
+    background-color: $white;
+    box-shadow: 0px 3px 10px 0px rgba($primary, 0.08);
+  }
+  .navbar-brand {
+    .logo-dark {
+      display: inline-block;
+    }
+    .logo-light {
+      display: none;
+    }
+  }
+  .navbar-nav {
+    .nav-item {
+      .nav-link {
+          color: rgba($black, 0.5) !important;
+          &.active {
+            color: rgba($primary, 1) !important;
+          }
+          &:hover {
+            color: $primary !important;
+          }
+          &::before {
+            background-color: $primary !important;
+        }
+      }
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+@media (max-width: 768px) { 
+  .navbar-custom {
+    padding: 18px 0px;
+    background-color: rgba($white, 1);
+    .navbar-brand {
+      margin-left: 15px;
+      .logo-dark {
+        display: inline-block !important;
+      }
+      .logo-light {
+        display: none !important;
+      }
+    }
+    .nav-item {
+      .nav-link {
+        display: inline-block;
+        color: rgba($black, 0.5) !important;
+        &.active {
+          color: $primary !important;
+        }
+      }
+    }
+  }
+}

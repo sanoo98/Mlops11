@@ -1,0 +1,164 @@
+// 
+// blog
+// 
+
+.blog {
+    .agency-blog-date {
+        position: relative;
+        background-color: rgba($primary, 1);
+        display: inline-block;
+        bottom: 40px;
+        border-radius: 3px;
+        p {
+            padding: 4px 18px;
+            display: block;
+            color: $white;
+        }
+    }
+    .agency-blog-info {
+        margin-top: -20px;
+    }
+    .agency-blog-info a,
+    .agency-blog-info:hover a,
+    .business-blog-content h5 a,
+    .construction-blog-content h4 a,
+    .photographer-blog-content h4 a {
+        color: rgba($primary, 1);
+    }
+
+}
+
+
+/*------ BUSINESS BLOG ------*/
+
+.business-blog-box {
+    position: relative;
+    .post-lable {
+        font-size: 13px;
+        position: absolute;
+        top: 20px;
+        background: $white;
+        left: 0;
+        padding: 5px 20px;
+        letter-spacing: 1px;
+        box-shadow: 10px 0px 15px rgba($black, 0.24);
+        border-radius: 0px 20px 20px 0;
+        a {
+            color: rgba($primary, 0.8);
+            font-weight: 700;
+        }
+    }
+}
+
+/*------ BLOG-STANDARD-POST------*/
+
+.blog-post {
+    .blog-post-box {
+        .blog-standard-content {
+            max-width: 800px;
+            margin: 0 auto;
+            .blog-post-title {
+                color: $gray-dark-100;
+                font-size: 24px;
+                letter-spacing: 1px;
+                &:hover {
+                    color: $warning;
+                    transition: all 0.5s;
+                }
+            }
+            .blog-post-author {
+                a {
+                    color: $gray-dark-500;
+                    font-weight: 600;
+                }
+            }
+            .blog-post-comment {
+                a {
+                    color: $gray-dark-500;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .blog-post-info > span:after {
+        content: "-";
+        display: inline-block;
+    }
+    
+    .blog-post-info > span:last-child:after {
+        content: "";
+    }
+}
+
+/*------ GYM-BLOG ------*/
+
+
+.gym-blog {
+    .gym-blog-box {
+        border: 1px solid $gray-200;
+        .gym-blog-img {
+            img {
+                clip-path: polygon(100% 0, 100% 100%, 0 80%, 0% 20%, 0 0);
+            }
+        }
+        .gym-blog-title {
+            color: $primary;
+            &:hover {
+                color: $warning;
+            }
+        }
+        .gym-blog-border {
+            border: 1px solid $primary;
+            width: 40px;
+        }
+    }
+}
+
+/*------ INTERIOR-BLOG ------*/
+
+.interior-blog {
+    .date {
+        float: right;
+        width: 54px;
+        height: 54px;
+        line-height: 25px;
+        text-align: center;
+        border-radius: 3px;
+        background-color: $primary;
+        color: $white;
+        position: relative;
+        bottom: 80px;
+        left: -10px;
+    }
+    .blog-info {
+        a {
+            h6 {
+                color: $primary;
+            }
+        }
+    }
+    .blog-brand {
+        li {
+            a {
+                color: $primary !important;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+// photographer-blog
+
+.photographer-blog {
+    h4 {
+        a {
+            color: $primary;
+        }
+    }
+}
+
+
+
+
+
+

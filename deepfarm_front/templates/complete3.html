@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+        <meta charset="utf-8" />
+        <title>Deep Farm - Agricultural Insights</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Premium Bootstrap v5.1.3 Landing Page Template" />
+        <meta name="keywords" content="bootstrap v5.1.3, premium, marketing, multipurpose" />
+        <meta content="Deep Farm="Team Deep Farm" />
+
+        <link rel="shortcut icon" href="static/images/favicon.ico">
+
+        <!-- Bootstrap core CSS -->
+        <link rel="stylesheet" href="static/bootstrap.min.css" type="text/css">
+        
+        <!-- Portfolio -->
+        <link rel="stylesheet" href="static/tobii.min.css" type="text/css" />
+    
+        <!--Material Icon -->
+        <link rel="stylesheet" type="text/css" href="static/materialdesignicons.min.css" />
+
+        <!-- slider -->
+        <link rel="stylesheet" href="static/swiper-bundle.min.css" />
+    
+        <!-- Pe-icon-7 icon -->
+        <link rel="stylesheet" type="text/css" href="static/pe-icon-7-stroke.min.css">
+    
+        <!-- Custom  Css -->
+        <link rel="stylesheet" type="text/css" href="static/style2.css" />
+		
+		
+		
+		
+
+</head> 
+<style type="text/css">
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}</style>>
+
+<body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="71">
+
+
+<div class="container">
+  <div class="photos">
+      <img class="image" src="{{ url_for('static',filename=image_output) }} style="width="300px";height="300px;">
+      <span class="word">Sentinal Satellite Image</span>
+  </div>
+    
+  <div class="photos">
+      <img class="image" src="{{ url_for('static',filename=image_output1) }} style="width="300px";height="300px;">
+      <span class="word">Masked Image</span>
+  </div>
+
+  <div class="photos">
+      <img class="image" src="{{ url_for('static',filename=image_output2) }} style="width="300px";height="300px;" >
+      <span class="word">Inference</span>
+  </div>
+
+  <div class="photos">
+      <img class="image" src="{{ url_for('static',filename="classlabels.png") }} style="width="300px";height="300px;">
+      <span class="word">Class Labels</span>
+
+  </div>
+</div>
+
+
+<table >
+  <thead>
+    <tr>
+      <th>Crop Type</th>
+      <th>Area/meter square </th>
+    </tr>
+  </thead>
+  <tbody>
+  {% for key, value in result.items() %}
+   <tr>
+   
+       <td> <span> {{ key }} </span></td>
+       <td> <span>{{ value }} </span></td>
+   </tr>
+  {% endfor %}
+  </tbody>
+</table>
+
+
+</body>
+</html>

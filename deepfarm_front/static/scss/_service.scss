@@ -1,0 +1,157 @@
+// 
+//  service
+// 
+
+.service {
+    .agency-services-box {
+        .agency-services-icon {
+            i {
+                font-size: 35px;
+            }
+        }
+    }
+}
+
+// 
+// app-service 
+// 
+
+.app-service {
+    .swiper-button {
+        display: flex;
+        justify-content: center;
+        margin: 38px 0 0 0;
+        .swiper-button-prev {
+            left: -8px;
+        }
+        .swiper-button-next {
+            right: -8px;
+            background: rgba($primary, 0.8);
+        }
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+        position: relative;
+        background: rgba($primary, 0.3);
+        border-radius: 50%;
+        width: 12px;
+        height: 12px;
+    }
+    
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 0;
+    }
+    .tobii-zoom__icon {
+        display: none;
+    }
+}
+
+
+// BOOK SERVICES
+
+.book-services-box {
+    border: 1px solid rgba($muted, 0.1);
+    padding: 30px 16px 30px 16px;
+}
+
+.book-services-icon {
+    font-size: 40px;
+}
+
+.book-services-border {
+    width: 40px;
+    height: 2px;
+    background-color: rgba($gray-900, 0.8);
+    opacity: 0.4;
+    margin: 0 auto;
+}
+
+// business-services 
+
+.business-services {
+    .business-services-img {
+        img {
+            width: 40px;
+        }
+    }
+}
+
+
+/*------ CONSTRUCTION-SERVICES ------*/
+
+.construction-services {
+    .construction-services-img {
+        img {
+            height: 30px;
+        }
+    }
+    .construction-services-content {
+        overflow: hidden;
+    }
+}
+
+/*------ INTERIOR-SERVICES ------*/
+
+.interior-services {
+    .nav-tabs {
+        background: $white;
+        border-color: transparent;
+        .nav-item {
+            flex: 1 1 auto;
+            text-align: center;
+            .nav-link {
+                text-transform: uppercase;
+                color: $primary;
+                padding: 16px 10px;
+                border-bottom: 2px solid $primary;
+                margin-left: 10px;
+                margin-right: 10px;
+                border-radius: 0px;
+                .interior-services-icon {
+                    i {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+    .nav-tabs .nav-item.show .nav-link,
+    .nav-tabs .nav-link:hover,
+    .nav-tabs .nav-link:focus,
+    .nav-tabs .nav-link.active {
+        color: $white !important;
+        border-color: transparent;
+        background-color: $primary !important;
+        transition: all 0.5s;
+        border-radius: 0px;
+    }
+    .about-img {
+        img {
+            max-width: 200px;
+            border: 5px solid $white;
+        }
+    }
+}
+
+/*------ PHOTOGRAPHER-SERVICES ------*/
+
+.photographer-services {
+    .photographer-services-title {
+        position: relative;
+        padding-bottom: 15px;
+        &:after {
+            content: '';
+            width: 30px;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            display: block;
+            border-bottom: 2px solid $primary;
+        }
+    }
+    .photographer-services-icon {
+        i {
+            font-size: 30px;
+        }
+    }
+}

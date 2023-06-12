@@ -1,0 +1,156 @@
+//
+// Testimonial
+//
+
+.testimonial {
+    .agency-testi-desc {
+        padding: 24px;
+    }
+    #agency-owl-demo {
+        .agency-testimonial-box {
+            padding-bottom: 0px !important;
+            .agency-testi-desc {
+                border: 1px solid $gray-200;
+                max-width: 600px;
+                margin: 0 auto;
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: 28px;
+                    height: 28px;
+                    background-color: $white;
+                    border: 1px solid $gray-200;
+                    transform: rotate(45deg);
+                    border-color: transparent $gray-200 $gray-200 transparent;
+                    left: 0;
+                    right: 0;
+                    margin: 0px auto;
+                    margin-top: 10px;
+                }
+            }
+            .agency-testimonial-img {
+                img {
+                    width: 80px;
+                }
+            }
+        }
+    }
+    .carousel-control-prev {
+        width: 50px;
+        height: 50px;
+        background: $primary;
+        font-size: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+    }
+    .carousel-control-next {
+        width: 50px;
+        height: 50px;
+        background: $primary;
+        font-size: 35px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+    }
+}
+
+
+
+
+/*------ APP-TESTIMONAIL------*/
+
+.app-testimonial {
+    .testimonial-icon {
+        i {
+            position: absolute;
+            background: $primary;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            font-size: 34px;
+            line-height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            color: $white;
+            top: 20px;
+            right: 50px;
+        }
+    }
+    .app-testimonial-img {
+        position: absolute;
+        left: 0px;
+        width: 60px;
+    }
+    .app-testimonial-brand {
+        color: $muted !important;
+    }
+    .swiper-button {
+        display: flex;
+        justify-content: center;
+        .swiper-button-prev {
+            left: -4px;
+        }
+        .swiper-button-next {
+            right: -4px;
+        }
+    }
+    
+    .swiper-button-next, .swiper-button-prev {
+        position: relative;
+        border: 2px solid rgba($primary, 0.6);
+        border-radius: 50%;
+        width: 35px;
+        height: 35px;
+        color: rgba($primary, 0.6);
+        &:hover {
+            color: rgba($primary, 1);
+            border: 2px solid rgba($primary, 1);
+        }
+    }
+    
+    .swiper-button-next:after, .swiper-button-prev:after {
+        font-size: 10px;
+        font-weight: 600;
+    }
+    .swiper-slide {
+        a {
+            margin-right:4px;
+          }
+    }
+}
+
+
+
+// /
+// home-6
+
+.bg-home6 {
+    padding: 160px 0px 75px 0;
+    background-color: #0576b917;
+    @media (max-width: 991.98px) {
+      padding: 145px 0px 70px 0;
+     }
+  }
+  .swiper-container {
+      overflow: hidden;
+  }
+  .homeslider {
+    .swiper-slide {
+      transform: translate3d(0px, 0px, -200px) rotateX(0deg) rotateY(0deg) !important;
+      .swiper-slide-shadow-left,
+      .swiper-slide-shadow-right {
+        background-image: linear-gradient( to left, rgba($black, 0.01), rgba($white, 0) );
+      }
+    }
+    .swiper-slide-active {
+      transform: translate3d(0px, 0px, 0px) rotateX(0deg) rotateY(0deg) scale(1.1) !important;
+    }
+  }
+  

@@ -1,0 +1,449 @@
+//
+// home 
+// 
+
+// agency-home
+
+.agency-home {
+    background: url(static/images/background/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .agency-home-title {
+        font-size: 40px;
+    }
+    .agency-home-desc {
+        max-width: 650px;
+        color: rgba($white, 0.7);
+    }
+}
+
+@media (max-width: 576px) { 
+    .agency-home {
+        .home-center {
+            .agency-home-title {
+                font-size: 28px;
+            }
+        }
+    }
+ }
+
+// 
+//  app-home
+// 
+.app-home {
+    padding: 160px 0px 160px 0px;
+    position: relative;
+    background-size: cover;
+    background-position: center center;
+    .app-home-sub-title {
+        font-size: 36px;
+    }
+    .app-home-desc {
+        max-width: 600px;
+    }
+}
+
+.bg-aap-shape {
+    position: absolute;
+    background-color: $purple;
+    top: -350px;
+    right: -50px;
+    border-radius: 8%;
+    width: 60%;
+    height: 800px;
+    transform: skew(3deg, 30deg);
+    opacity: 1;
+    z-index: -1;
+}
+
+.bg-app-circle {
+    position: absolute;
+    background-color: $purple;
+    top: -400px;
+    left: -260px;
+    border-radius: 100%;
+    height: 800px;
+    width: 800px;
+    opacity: 0.6;
+    z-index: -1;
+}
+
+.bg-app-circle-two {
+    position: absolute;
+    background-color: $purple;
+    top: 160px;
+    left: 430px;
+    border-radius: 100%;
+    height: 100px;
+    width: 100px;
+    z-index: -1;
+}
+
+@media (max-width: 1024px) {
+    .bg-aap-shape {
+        display: none;
+    }
+    .bg-app-circle {
+        width: 100%;
+        left: 0;
+        top: -70%;
+        border-radius: 10%;
+    }
+}
+
+@media (max-width: 576px) {
+    .bg-app-circle {
+        display: none;
+    }
+    .bg-app-circle-two {
+        display: none;
+    }
+}
+
+/*------ BLOG-POST ------*/
+
+.blog-standard-home {
+    background: url(static/images/background/bg-1.jpg);
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+    padding: 170px 0px 140px 0px;
+    .blog-standard-home-title {
+        font-size: 36px;
+    }
+}
+
+.post-subtitle {
+    color: $primary !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+/*------ Book HOME ------*/
+
+.book-home {
+    background: url(static/images/background/bg-11.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    z-index: 1;
+    .home-center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .book-home-title {
+            font-size: 38px;
+        }
+        .book-price {
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .book-home-desc {
+            color: rgba($gray-100, 0.9);
+        }
+    }
+}
+
+@media (max-width: 768px) { 
+    .book-home {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) { 
+    .book-home-title {
+        font-size: 28px !important;
+    }
+    .book-price {
+        font-size: 28px !important;
+    }
+}
+
+
+/*------  BUSINESS HOME ------*/
+
+.business-home {
+    background: url(static/images/background/bg-17.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .home-center {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .intro {
+            display: flex;
+            height: 32px;   
+            color: $white;
+            align-items: center;
+            justify-content: center;
+            background-size: cover;
+            background-position:center;
+            .typing {
+                text-transform: uppercase;
+                font-size: 26px;
+                letter-spacing: 4px;
+                height: auto;
+                margin-left: 10px;
+                position: relative;
+                &::after {
+                    content: "";
+                    position: absolute;
+                    right: -5px;
+                    width: 1px;
+                    height: 100%;
+                    border-right: 2px solid $white;
+                    animation: blink 0.5s ease infinite;
+                  }
+              }
+          }
+        .business-home-subtitle {
+            font-size: 38px;
+        }
+        .business-home-desc {
+          max-width: 600px;
+          margin: 0 auto;
+          color: rgba($white, 0.7);
+      }
+    }
+}
+  
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+  
+
+/*------ CONSTRUCTION-HOME ------*/
+
+.construction-home {
+    background: url(static/images/background/bg-4.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .construction-home-title {
+        font-size: 36px;
+    }
+    .construction-home-border {
+        border: 1px solid $white;
+        width: 80px;
+        margin: 0 auto;
+    }
+    .construction-home-desc {
+        max-width: 700px;
+        margin: 0 auto;
+        color: rgba($gray-100, 0.7);
+    }
+}
+
+/*------ GYM-HOME ------*/
+
+.gym-home {
+    position: relative;
+    .container-fluid {
+        overflow: hidden;
+        .carousel-item {
+            background-position: center center;
+            background-size: cover;
+            .gym-home-subtitle {
+                font-size: 20px;
+            }
+            .gym-home-title {
+                font-size: 70px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.gym-home .carousel-item,
+.gym-home .carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 576px) { 
+    .gym-home {
+        .gym-home-title {
+            font-size: 40px !important;
+        }
+    }
+}
+
+/*------ INTERIOR-HOME ------*/
+
+.interior-home {
+    position: relative;
+    .container-fluid {
+        overflow: hidden;
+        .carousel-item {
+            background-position: center center;
+            background-size: cover;
+            .interior-home-subtitle {
+                font-size: 18px;
+            }
+            .interior-home-title {
+                font-size: 50px;
+                letter-spacing: 5px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+.interior-home .carousel-item,
+.interior-home .carousel {
+    height: 100vh;
+    width: 100%;
+}
+
+/*------ PHOTOGRAPHER-HOME ------*/
+
+.photographer-home {
+    background: url(static/images/background/bg-12.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .intro{
+        display: flex;
+        height: 32px;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-position: center;
+        .typing2 {
+            font-size: 40px;
+            letter-spacing: 5px;
+        } 
+    }
+    .photographer-home-desc {
+        max-width: 650px;
+        color: $gray-200;
+    }
+    .photographer-home-social {
+        a {
+            color: $white;
+            font-size: 20px;
+            transition: all 0.5s;
+            &:hover {
+                color: $warning;
+            }
+    }
+    }
+}
+
+/*------ SOFTWERE-HOME ------*/
+
+.softwere-home {
+    background: url(static/images/background/bg-14.jpg);
+    background-size: cover;
+    background-position: center center;
+    padding: 250px 0px 270px 0px;
+    position: relative;
+    .softwere-home-title {
+        font-size: 48px;
+    }
+    .softwere-home-desc {
+        color: rgba(255, 255, 255, 0.6);
+    }
+    span {
+        font-weight: 600;
+    }
+    .softwere-home-shape-img {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: auto;
+        bottom: 0;
+        left: 0;
+        padding: 0px;
+        img {
+            width: 100%;
+            height: auto;
+        }
+    }
+    .softwere-home-watch-video {
+        position: relative;
+        z-index: 1;
+        .modal-btn {
+            text-align: center;
+            .play-icon-circle {
+                height: 70px;
+                width: 70px;
+                font-size: 30px;
+                line-height: 68px;
+                border-radius: 50%;
+                display: inline-block;
+                background-color: $white;
+                color: $warning;
+            }
+        }
+    }
+    .btn-close {
+        width: 24px;
+        height: 24px;
+        background-color: rgba(26, 51, 101, 0.5);
+        border-radius: 4px;
+        position: relative;
+        top: 60px;
+        right: 3px;
+        z-index: 3;
+    }
+}
+
+/*------ STARTUP HOME ------*/
+
+.startup-home {
+    background: url(static/images/background/bg-16.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+    position: relative;
+    .startup-home-title {
+        font-size: 36px;
+    }
+    .startup-home-desc {
+        max-width: 700px;
+        color: $gray-200;
+    }
+    a {
+        color: $white;
+        .play-icon-circle {
+            height: 70px;
+            width: 70px;
+            background-color: $warning;
+            line-height: 70px;
+            text-align: center;
+            border-radius: 50%;
+            display: inline-block;
+            font-size: 26px;
+        }
+    }
+    .btn-close {
+        width: 24px;
+        height: 24px;
+        background-color: rgba(26, 51, 101, 0.5);
+        border-radius: 4px;
+        position: relative;
+        top: 60px;
+        right: 3px;
+        z-index: 3;
+    }
+}

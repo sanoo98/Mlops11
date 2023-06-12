@@ -1,0 +1,222 @@
+// 
+//  peicing
+// 
+
+/*------ App pricing ------*/
+.app-pricing {
+  .gym-pricing-box {
+    border: 1px solid rgba($muted, 0.1);
+    border-radius: 6px 6px 0px 0px;
+    .gym-pricing-title {
+      border-bottom: 1px solid rgba($muted, 0.1);
+      h4 {
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    }
+    .gym-month-lebal {
+      p {
+        background-color: $gray-200;
+        display: inline-block;
+        padding: 5px 30px;
+        border-radius: 3px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        bottom: 16px;
+      }
+    }
+  }
+  .gym-pricing-box-active {
+    border: 1px solid rgba($muted, 0.1);
+    border-radius: 6px 6px 0px 0px;
+    .gym-pricing-title-active {
+      border-radius: 6px 6px 0px 0px;
+      border-bottom: 1px solid $primary;
+      font-weight: 600;
+      letter-spacing: 2px;
+    }
+    .gym-pricing-plan {
+      span {
+        position: relative;
+        bottom: 20px;
+      }
+    }
+    .gym-month-lebal {
+      p {
+        background-color: $gray-200;
+        display: inline-block;
+        padding: 5px 30px;
+        border-radius: 3px;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        bottom: 16px;
+      }
+    }
+  }
+}
+
+
+
+
+/*------ BOOK PRICING ------*/
+
+.book-pricing {
+  .book-pricing-box {
+    border: 1px solid $gray-200;
+    .book-pricing-title {
+      font-size: 18px;
+    }
+    .book-pricing-price {
+      font-size: 30px;
+      sup {
+        position: relative;
+        top: -20px;
+      }
+    }
+  }
+  .book-pricing-features {
+    p {
+      border-bottom: 1px solid $gray-200;
+      padding: 20px;
+    }
+  }
+}
+
+/*------ BUSINESS PRICING ------*/
+
+.business-pricing {
+  .business-pricing-box {
+    border: 1px solid $gray-200;
+    border-radius: 6px;
+    position: relative;
+    .business-pricing-icon  {
+      i {
+        font-size: 40px;
+      }
+    }
+    .business-pricing-title {
+      font-size: 20px;
+    }
+    .business-pricing-features {
+      p {
+        border-bottom: 1px solid $gray-200;
+        padding: 14px 14px;
+      }
+      p:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+  .business-pricing-box-active {
+    border: 1px solid $primary;
+    border-radius: 6px;
+    position: relative;
+    .business-pricing-lable {
+      position: absolute;
+      display: block;
+      top: 0;
+      right: 0px;
+      .business-lable-name {
+        position: relative;
+        background-color: $primary;
+        color: $white;
+        font-size: 12px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 100px;
+        top: 22px;
+        &:after {
+          content: "";
+          border-top: 20px solid $primary;
+          border-bottom: 20px solid $primary;
+          border-right: 11px solid transparent;
+          border-left: 11px solid transparent;
+          position: absolute;
+          left: -11px;
+          top: 0;
+        }
+      }
+    }
+  }
+}
+
+/*------ CONSTRUCTION-PRICING ------*/
+
+.construction-pricing-box {
+  border: 1px solid $gray-200;
+  border-radius: 6px;
+  .construction-pricing-standard {
+    border-top: 4px double $gray-200;
+    border-bottom: 4px double $gray-200;
+  }
+  .construction-pricing-standard-active {
+    border-top: 4px double $primary;
+    border-bottom: 4px double $primary;
+  }
+  .construction-pricing-img {
+    img {
+      width: 140px;
+      height: 140px;
+    }
+  }
+}
+
+/*------ PHOTOGRAPHER PRICING ------*/
+
+.photographer-pricing {
+  .photographer-pricing-box {
+    border: 1px solid $gray-200;
+    .pricing-plan {
+      position: relative;
+
+      &:after {
+        content: '';
+        width: 30px;
+        position: absolute;
+        left: -45px;
+        bottom: 10px;
+        display: block;
+        border-bottom: 2px solid $primary;
+      }
+    }
+  }
+  .photographer-pricing-box-active {
+    border: 1px solid $primary;
+  }
+  .photographer-pricing-icon {
+    i {
+      font-size: 35px;
+    }
+  }
+  .photographer-desc {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
+
+/*------ SOFTWERE-PRICING ------*/
+
+.softwere-pricing {
+  .softwere-pricing-box {
+    border: 1px solid $gray-200;
+    .softwere-pricing-plan {
+      h3 {
+        font-size: 40px;
+        sup {
+          position: relative;
+          top: -20px;
+          font-size: 18px;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}

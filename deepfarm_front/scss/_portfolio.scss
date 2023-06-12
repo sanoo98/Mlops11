@@ -1,0 +1,96 @@
+// 
+//  portfolio
+// 
+
+.portfolio {
+  .portfolioFilter {
+      margin-bottom: 30px;
+  }
+  .portfolio-box {
+      overflow: hidden;
+      position: relative;
+      padding: 0;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      .lightbox {
+        display: block;
+      }
+  }
+  .gallary-title {
+      a {
+          color: $primary;
+      }
+  }
+  .tobii-zoom__icon {
+    display: none;
+  }
+  .filter-options {
+    li {
+      display: inline-block;
+      margin: 3px 6px;
+      font-size: 12px;
+      text-transform: uppercase;
+      padding: 7px 12px;
+      cursor: pointer;
+      transition: all 0.4s ease-in-out;
+      color: $primary !important;
+      &.active {
+        background-color: $primary !important;
+        color: $white !important;
+        border-radius: 3px;
+      }
+    }
+  }
+}
+
+
+/*------ INTERIOR-WORK ------*/
+
+
+.business-portfolio {
+  .gallary-box {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border-radius: 3px;
+    .lightbox {
+      display: inline-block;
+      .gallary-container {
+        transform: scale(1);
+        width: 100%;
+        transition: all 2s cubic-bezier(0.23, 1, 0.32, 1) 0s;
+      }
+      .item-effect {
+        position: absolute;
+        transition: all 0.5s ease-in-out 0s;
+        top: 0px;
+        left: 0px;
+        bottom: 0px;
+        right: 0px;
+        visibility: hidden;
+        overflow: hidden;
+        transform: translateX(-100%);
+        .item-caption {
+          position: absolute;
+          bottom: 0px;
+          left: 0px;
+          right: 0px;
+          transition: all 0.5s ease-in-out 0s;
+        }
+      }
+    }
+    &:hover {
+      .item-effect {
+        transition: all 0.5s;
+        visibility: visible;
+        transform: translateY(0px);
+        position: absolute;
+      }
+    }
+  }
+}
+
+.item-effect:hover h5,
+.item-effect:hover p {
+  transform: translateY(0px);
+}
